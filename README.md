@@ -21,7 +21,7 @@ Chill Chef is a recipe recommendation system that suggests recipes based on the 
 
 1. Clone the repository:
     \`\`\`bash
-    git clone https://github.com/your-username/Chill-Chef.git
+    git clone [https://github.com/your-username/Chill-Chef.git](https://github.com/ShushantSharma372/Chill-Chef.git)
     cd ChillChef
     \`\`\`
 
