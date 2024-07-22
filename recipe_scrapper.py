@@ -31,7 +31,7 @@ def recipes_url(url):
 def scrap_recipes(dict):
     main_recipes_dict = {key: [] for key in ('Title', 'Total Cook Time', 'Prep Time',
                                              'Cook Time', 'Recipe Servings', 'Difficulty',
-                                             'Ingredients', 'Cuisine')}
+                                             'Ingredients', 'Cuisine', 'Method', 'Link', 'Image')}
     recipe_counter = 0
     for cuisine, recipe in dict.items():
         for name, link in recipe.items():
@@ -47,6 +47,7 @@ def scrap_recipes(dict):
             main_recipes_dict['Cuisine'].append(cuisine)
             main_recipes_dict['Method'].append(temp.get('Method', ''))
             main_recipes_dict['Link'].append(temp.get('Link', ''))
+            main_recipes_dict['Image'].append(temp.get('Image', ''))
             print("Data Scrapping for Recipe ", recipe_counter, " is done.")
     print("All recipes data is scrapped.")
     return main_recipes_dict

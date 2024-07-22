@@ -11,7 +11,7 @@ def scrap_recipe(url):
     time_value_list = soup.find_all('span', class_ = "RcpInf_crd_tx2")
     ingredients = soup.find_all('li', class_ = "RcpIngd-tp_li")
     method = soup.find_all('span', class_= "RcHTM_li-tx")
-
+    img = soup.find(id = "story_image_main")
     info_dict = {}
 
     info_dict['Title'] = title
@@ -23,6 +23,7 @@ def scrap_recipe(url):
     info_dict['Ingredients'] = ingre_list
     info_dict['Method'] = " ".join([x.text.strip() for x in method])
     info_dict['Link'] = url
+    info_dict['Image'] = img.get("src")
     return info_dict
 
 def main():
