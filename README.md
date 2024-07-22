@@ -50,7 +50,7 @@ Chill Chef is a recipe recommendation system that suggests recipes based on the 
 ## Screenshots
 
 ### Recipe Recommendations
-![Recipe Recommendations](screenshots/recipe_recommendations.png)
+![Recipe Recommendations](screenshots/1.JPG)
 
 ## Contributing
 
